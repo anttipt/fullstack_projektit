@@ -6,7 +6,9 @@ export default function ArticleList() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    getArticles().then(res => setArticles(res.data));
+    getArticles()
+      .then(res => setArticles(res.data))
+      .catch(err => console.error('Virhe haettaessa artikkeleita:', err.message));
   }, []);
 
   return (

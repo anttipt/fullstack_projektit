@@ -1,10 +1,10 @@
-import React from 'react';
+import ArticleList from '../components/ArticleList';
 
 export default function Home() {
   return (
     <div>
-      <h2>Tervetuloa blogialustaan!</h2>
-      <p>Täällä voit lukea ja kirjoittaa artikkeleita.</p>
+      <h2>Etusivu</h2>
+      <ArticleList />
     </div>
   );
 }

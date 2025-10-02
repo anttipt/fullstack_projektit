@@ -10,15 +10,37 @@ export default function ArticleForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await createArticle({ title, content, author });
-    navigate('/');
+    try {
+      await createArticle({ title, content, author });
+      navigate('/'); // Palaa etusivulle onnistuneen tallennuksen jälkeen
+    } catch (err) {
+      console.error('Virhe tallennuksessa:', err.message);
+    }
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <input placeholder="Otsikko" value={title} onChange={e => setTitle(e.target.value)} />
-      <textarea placeholder="Sisältö" value={content} onChange={e => setContent(e.target.value)} />
-      <input placeholder="Kirjoittaja" value={author} onChange={e => setAuthor(e.target.value)} />
+      <h2>Uusi artikkeli</h2>
+      <input
+        type="text"
+        placeholder="Otsikko"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        required
+      />
+      <textarea
+        placeholder="Sisältö"
+        value={content}
+        onChange={(e) => setContent(e.target.value)}
+        required
+      />
+      <input
+        type="text"
+        placeholder="Kirjoittaja"
+        value={author}
+        onChange={(e) => setAuthor(e.target.value)}
+        required
+      />
       <button type="submit">Julkaise</button>
     </form>
   );
