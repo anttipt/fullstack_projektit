@@ -27,19 +27,19 @@ npm install
 npm start
 
 ## Projektirakenne
-
-blog/
-├── blog-backend/
-│   ├── models/
-│   ├── index.js
-├── blog-frontend/
-│   ├── src/
-│   │   ├── pages/
-│   │   ├── components/
-│   │   ├── api.js
-│   ├── public/
-├── README.md
-
+````
+blog/  
+├── blog-backend/  
+│   ├── models/  
+│   ├── index.js  
+├── blog-frontend/  
+│   ├── src/  
+│   │   ├── pages/  
+│   │   ├── components/  
+│   │   ├── api.js  
+│   ├── public/  
+├── README.md  
+````
 
 ## 🧪 Ominaisuudet
 
