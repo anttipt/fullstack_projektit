@@ -15,17 +15,17 @@ Tämä on MERN-stackilla (MongoDB, Express, React, Node.js) toteutettu blogialus
 ## 🚀 Käynnistys
 
 ### Backend
-
+````
 cd blog-backend
 npm install
 npm start
-
+````
 ### Frontend
-
+````
 cd blog-frontend
 npm install
 npm start
-
+````
 ## Projektirakenne
 ````
 blog/  
