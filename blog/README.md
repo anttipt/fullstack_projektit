@@ -16,7 +16,6 @@ Tämä on MERN-stackilla (MongoDB, Express, React, Node.js) toteutettu blogialus
 
 ### Backend
 
-```bash
 cd blog-backend
 npm install
 npm start
